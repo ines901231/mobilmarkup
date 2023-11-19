@@ -156,14 +156,29 @@ body {
 }
 
 .card2 a:hover {
-    background-color: #fff;
-    color: #080404;
+    background-color: #080404;
+    color: #fff;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1);
     transition: all 0.2s ease;
 }
 
+.card2 a::before {
+    content: '';
+    width: 0;
+    height: 47px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #f8502e 0%, #f8502e 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
 
+.card2 a:hover::before {
+    width: 200px;
+}
 
 
 @media only screen and (min-width: 768px) {
