@@ -21,6 +21,12 @@ body {
     margin: 10px;
 }
 
+.forza:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+
 .header ul {
     float: right;
     margin-right: 20px;
