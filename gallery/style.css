@@ -160,6 +160,11 @@ body {
         border-radius: 5px;
     }
 
+    .container3 .box .dream img:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+
     .checkbut {
         display: none;
     }
