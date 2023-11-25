@@ -139,6 +139,7 @@ body {
 
 .card2 a {
     background-color: #080404;
+    border: 1px solid #fff;
     color: #fff;
     padding: 15px 20px;
     display: block;
