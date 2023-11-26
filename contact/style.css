@@ -13,7 +13,7 @@ body {
     width: auto;
     height: 70px;
     background-color: #080404;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff; 
 }
 
 .forza {
@@ -88,7 +88,7 @@ body {
 }
 
 .container5 .feedback {
-    border: 1px solid #fff;
+    border: 1px solid #f8502e;
     width: 80%;
     height: 500px;
     background-color: #fff;
@@ -127,24 +127,7 @@ form {
     font-size: 15px;
     border: none;
     cursor: pointer;
-}
-
-.kirim {
-    opacity: 0;
-    padding-bottom: 10px;
-    height: 60px;
-    width: 60px;
-    display: block;
-    text-align: center;
-}
-
-.kirim:hover {
-    opacity: 1;
-    padding-bottom: 10px;
-    height: 60px;
-    width: 60px;
-    display: block;
-    text-align: center;
+    transition: .5s ease;
 }
 
 .btn:hover {
@@ -185,7 +168,7 @@ form {
     }
 
     .container5 .feedback {
-        border: 1px solid #fff;
+        border: 1px solid #f8502e;
         width: 50%;
         height: 500px;
         background-color: #fff;
@@ -250,6 +233,100 @@ form {
         background-color: #fff;
         transition: .2s;
         box-shadow: 5px 5px #080404; 
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container5 .feedback {
+        border: 1px solid #f8502e;
+        width: 80%;
+        height: 500px;
+        background-color: #fff;
+        margin: auto;
+        padding: 30px;
+        border-radius: 5px;
+        margin-top: 2em;
+    }
+    
+    form {
+        margin: 40px;
+    }
+    
+    .input {
+        flex-wrap: wrap;
+        width: 200px;
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid #080404;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .areatext {
+        height: 150px;
+        padding-top: 5px;
+    }
+    
+    .btn {
+        color: #080404;
+        margin-top: 9px;
+        padding: 20px;
+        background-color: #fff;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .kirim {
+        opacity: 0;
+        padding-bottom: 10px;
+        height: 60px;
+        width: 60px;
+        display: block;
+        text-align: center;
+    }
+    
+    .kirim:hover {
+        opacity: 1;
+        padding-bottom: 10px;
+        height: 60px;
+        width: 60px;
+        display: block;
+        text-align: center;
+    }
+    
+    .btn:hover {
+        background-color: #fff;
+        transition: .2s;
+        box-shadow: 5px 5px #080404; 
+    }
+    
+    .btn:hover {
+        background-color: #080404;
+        color: #fff;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.2s ease;
+    }
+    
+    .btn::before {
+        content: '';
+        width: 0;
+        height: 57px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #f8502e 0%, #f8502e 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+    .btn:hover::before {
+        width: 80px;
     }
 }
 

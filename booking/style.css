@@ -147,6 +147,7 @@ body {
     margin: 20px 50px;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s ease;
 }
 
 .card2:hover {
@@ -180,6 +181,18 @@ body {
 
 .card2 a:hover::before {
     width: 200px;
+}
+
+/* js show on scroll */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 

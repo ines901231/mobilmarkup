@@ -89,6 +89,7 @@ body {
     font-weight: bolder;
     padding-bottom: 10px;
     border-bottom: 3px solid #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container3 .heading3 h3 span {
@@ -111,6 +112,16 @@ body {
     width: 92%;
     padding-bottom: 15px;
     border-radius: 5px;
+}
+
+/* js show on scroll */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
 }
 
 @media only screen and (min-width:768px) {
@@ -136,6 +147,7 @@ body {
         font-weight: bolder;
         padding-bottom: 10px;
         border-bottom: 3px solid #fff;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
     .container3 .heading3 h3 span {
