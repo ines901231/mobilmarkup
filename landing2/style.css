@@ -189,7 +189,7 @@ body {
 .hidden {
     opacity: 0;
     transition: all 2s;
-    transform: translateX(-100%);
+    transform: none;
 }
 
 .show {
@@ -216,7 +216,7 @@ body {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-align: center;
         padding-top: 280px;
-        font-size: 80px;
+        font-size: 6vw;
         transition: .5s ease-in-out;
     }
     
@@ -235,6 +235,7 @@ body {
     }
     
     .about img {
+        width: 80%;
         display: inline-block;
         padding-left: 5%;
         transition: .3s ease all;
