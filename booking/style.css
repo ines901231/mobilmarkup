@@ -20,6 +20,7 @@ body {
     width: 50px;
     height: auto;
     margin: 10px;
+    transition: all 0.2s ease;
 }
 
 .forza:hover {
@@ -169,7 +170,7 @@ body {
 .card2 a::before {
     content: '';
     width: 0;
-    height: 47px;
+    height: 46.5px;
     position: absolute;
     top: 0;
     left: 0;
@@ -180,19 +181,17 @@ body {
 }
 
 .card2 a:hover::before {
-    width: 200px;
+    width: 198.4px;
 }
 
 /* js show on scroll */
 .hidden {
     opacity: 0;
     transition: all 1s;
-    transform: translateX(-100%);
 }
 
 .show {
     opacity: 1;
-    transform: translateX(0);
 }
 
 

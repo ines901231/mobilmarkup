@@ -20,6 +20,7 @@ body {
     width: 50px;
     height: auto;
     margin: 10px;
+    transition: all 0.2s ease;
 }
 
 .forza:hover {

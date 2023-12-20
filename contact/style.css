@@ -20,6 +20,7 @@ body {
     width: 50px;
     height: auto;
     margin: 10px;
+    transition: all 0.2s ease;
 }
 
 .forza:hover {
@@ -104,7 +105,7 @@ form {
 
 .input {
     flex-wrap: wrap;
-    width: 300px;
+    width: 100%;
     height: 40px;
     margin-top: 10px;
     padding-left: 5px;
@@ -255,7 +256,7 @@ form {
     
     .input {
         flex-wrap: wrap;
-        width: 200px;
+        width: 100%;
         height: 40px;
         margin-top: 10px;
         padding-left: 5px;
