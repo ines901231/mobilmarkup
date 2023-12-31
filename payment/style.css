@@ -84,10 +84,10 @@ body {
 
 .titl4 h3 {
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bolder;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -120,6 +120,10 @@ th {
     color: #fff;
     text-transform: uppercase;
     font-size: medium;
+}
+
+.abu {
+    background-color: #ddd;
 }
 
 
