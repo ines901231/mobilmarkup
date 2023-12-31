@@ -28,7 +28,8 @@ body {
 
 .about {
     width: 100%;
-    height: 700px;
+    height: 600px;
+    background-color: #fff;
 }
 
 .about img {
@@ -44,17 +45,13 @@ body {
 }
 
 .about :where(h2) {
+    font-family: 'Kanit', sans-serif;
     display: inline-block;
     color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: auto;
-    font-size: xx-large;
+    text-shadow: 2px 0 #f8502e, -2px 0 #f8502e, 0 2px #f8502e, 0 -2px #f8502e, 1px 1px #f8502e, -1px -1px #f8502e, 1px -1px #f8502e, -1px 1px #f8502e;
+    font-size: 200px;
     padding-top: 10%;
     text-align: center;
-}
-
-.about h2 span {
-    font-size: large;
 }
 
 .hero {
@@ -188,13 +185,13 @@ body {
 /* js show on scroll */
 .hidden {
     opacity: 0;
-    transition: all 2s;
-    transform: none;
+    transition: all 1s;
+    transform: translateY(+30%);
 }
 
 .show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 /* doesnt work */
@@ -228,36 +225,32 @@ body {
         width: 100%;
         height: 700px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
     
-    .about img {
-        width: 80%;
-        display: inline-block;
-        padding-left: 5%;
-        transition: .3s ease all;
-    }
-    
-    .about img:hover {
-        transition: .3s ease all;
-        transform: scale(1.05);
-    }
-    
     .about :where(h2) {
+        font-family: 'Kanit', sans-serif;
         display: inline-block;
         color: #fff;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        width: auto;
-        font-size: xx-large;
-        padding-top: 10%;
-        text-align: unset;
+        text-shadow: 2px 0 #f8502e, -2px 0 #f8502e, 0 2px #f8502e, 0 -2px #f8502e, 1px 1px #f8502e, -1px -1px #f8502e, 1px -1px #f8502e, -1px 1px #f8502e;
+        font-size: 15vw;
     }
-    
-    .about h2 span {
-        font-size: large;
+
+    .about span {
+        color: #f8502e;
+    }
+
+    .about :where(h3) {
+        opacity: 80%;
+        color: rgba(0, 0, 0, 6);
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
     .hero {
@@ -265,6 +258,7 @@ body {
         height: auto;
         filter: grayscale(1);
         transition: .5s ease-in-out all;
+        font-size: 5vw;
     }
     
     .hero:hover {
@@ -399,6 +393,7 @@ body {
         left: 15%;
         transition: .5s ease all;
         border-bottom: 60px solid #080404;
+        border-top: 1px solid transparent;
     }
 
     .cover:hover {
@@ -419,6 +414,7 @@ body {
         left: 48%;
         transition: .5s ease all;
         border-bottom: 200px solid #080404;
+        visibility: hidden;
     }
 
     .cover2:hover {
@@ -429,5 +425,6 @@ body {
         border-top: 60px solid transparent;
         border-bottom: 150px solid transparent;
         height: 130px;
+        visibility: hidden;
     }
 }
