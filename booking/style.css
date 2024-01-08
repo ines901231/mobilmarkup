@@ -55,6 +55,10 @@ body {
     border-bottom: 1px solid #fff;
 }
 
+a.main {
+    border-bottom: 1px solid #fff;
+}
+
 .checkbut {
     font-size: 30px;
     color: #fff;

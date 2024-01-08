@@ -28,7 +28,7 @@ body {
 
 .about {
     width: 100%;
-    height: 600px;
+    height: 330px;
     background-color: #fff;
 }
 
@@ -49,21 +49,80 @@ body {
     display: inline-block;
     color: #fff;
     text-shadow: 2px 0 #f8502e, -2px 0 #f8502e, 0 2px #f8502e, 0 -2px #f8502e, 1px 1px #f8502e, -1px -1px #f8502e, 1px -1px #f8502e, -1px 1px #f8502e;
-    font-size: 200px;
+    font-size: 9vh;
     padding-top: 10%;
     text-align: center;
+    cursor: default;
 }
 
-.hero {
+.about span {
+    color: #f8502e;
+}
+
+.about :where(h3) {
+    opacity: 80%;
+    color: rgba(0, 0, 0, 6);
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: default;
+}
+
+.about2 {
+    margin: auto;
     width: 100%;
-    height: auto;
-    filter: grayscale(1);
-    transition: .5s ease-in-out all;
+    height: 700px;
+    background-color: #fff;
 }
 
-.hero:hover {
-    transition: .5s ease-in-out all;
-    filter: grayscale(0);
+.about2 .parent {
+    width: 90%;
+    height: 15%;
+    padding-left: 5%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    flex-wrap: wrap;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-bottom: 950px;
+    /* border: 1px solid #f8502e; */
+}
+
+.about2 .parent .profile {
+    background-color: #fff;
+    border-radius: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.about2 .parent .profile img {
+    width: 50%;
+    margin: auto;
+}
+
+.about2 .parent .profile p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+    cursor: default;
+}
+
+.about2 .parent .profile p span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+    color: #f8502e;
+    font-size: x-large;
 }
 
 .content {
@@ -121,9 +180,17 @@ body {
 }
 
 .start {
+    text-align: center;
+    align-content: center;
+    max-width: 1200px;
     width: 100%;
-    height: 600px;
-    padding-top: 100px;
+    height: 300px;
+    margin: auto;
+}
+
+.start p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
 }
 
 .start a {
@@ -137,11 +204,8 @@ body {
 }
 
 .btn {
-    align-content: center;
+    width: 25%;
     color: #080404;
-    margin-left: 25%;
-    margin-top: 15%;
-    padding: 20px;
     background-color: #fff;
     font-size: xx-large;
     border: none;
@@ -181,6 +245,81 @@ body {
     width: 100%;
 }
 
+.footer {
+    margin: auto;
+    height: 150px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.copyright {
+    width: 26em;
+}
+
+.copyright .horizon {
+    font-size: x-large;
+    cursor: default;
+}
+
+.copyright p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    padding-bottom: 20px;
+    cursor: default;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kolom {
+    width: 16%;
+    padding: 0 15px;
+}
+
+.kolom h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+    cursor: default;
+}
+
+.kolom h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #f8502e;
+    height: 2px;
+    box-sizing: border-box;
+    width: 79px;
+}
+
+.kolom ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.kolom ul li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #080404;
+    display: block;
+    transition: 0.2s ease all;
+}
+
+.kolom ul li a:hover {
+    color: #f8502e;
+    padding-left: 8px;
+}
 
 /* js show on scroll */
 .hidden {
@@ -252,20 +391,6 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
-    
-    .hero {
-        width: 100%;
-        height: auto;
-        filter: grayscale(1);
-        transition: .5s ease-in-out all;
-        font-size: 5vw;
-    }
-    
-    .hero:hover {
-        transition: .5s ease-in-out all;
-        filter: grayscale(0);
-    }
-    
     .content {
         opacity: 0;
         font-size: 50px;
@@ -323,7 +448,6 @@ body {
     .start {
         width: 100%;
         height: 600px;
-        padding-top: 100px;
     }
     
     .start a {
@@ -339,7 +463,6 @@ body {
     .btn {
         align-content: center;
         color: #080404;
-        margin-left: 40%;
         margin-top: 15%;
         padding: 20px;
         background-color: #fff;
@@ -389,7 +512,7 @@ body {
         width: 70%;
         height: 200px;
         border: 1px solid #fff;
-        top: 11.7em;
+        top: 11em;
         left: 15%;
         transition: .5s ease all;
         border-bottom: 60px solid #080404;
