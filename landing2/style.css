@@ -72,6 +72,33 @@ body {
 
 .about2 {
     margin: auto;
+}
+
+.about span {
+    color: #f8502e;
+}
+
+.about :where(h3) {
+    opacity: 80%;
+    color: rgba(0, 0, 0, 6);
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: default;
+}
+
+.about2 {
+    margin: auto;
+}
+.about2 {
+    width: 100%;
+    height: 700px;
+    background-color: #f8502e;
+}
+
+.hero {
     width: 100%;
     height: 700px;
     background-color: #fff;
@@ -250,6 +277,9 @@ body {
     height: 150px;
     max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
+    width: 100%;
+    width: 1200px;
     padding: 50px;
     background-color: #fff;
 }
@@ -261,12 +291,14 @@ body {
 .copyright .horizon {
     font-size: x-large;
     cursor: default;
+    cursor: default;
 }
 
 .copyright p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 300;
     padding-bottom: 20px;
+    cursor: default;
     cursor: default;
 }
 
