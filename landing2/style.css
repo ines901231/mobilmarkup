@@ -452,7 +452,7 @@ body {
     
     .start a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
     
     .start a:hover {
@@ -462,14 +462,14 @@ body {
     
     .btn {
         align-content: center;
-        color: #080404;
+        color: #fff;
         margin-top: 15%;
         padding: 20px;
-        background-color: #fff;
+        background-color: #080404;
         font-size: xx-large;
         border: none;
         cursor: pointer;
-        border: 3px solid #fff;
+        border: 3px solid #f8502e;
         transition: all 0.4s ease;
     }
     
